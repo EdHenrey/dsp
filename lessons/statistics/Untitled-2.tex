@@ -1,13 +1,8 @@
-[Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
 ```python
 def CohenEffectSize(A, B):
     return (A.mean()-B.mean())/((A.var()*len(A) + B.var()*len(B))/(len(A) + len(B)))**.5  
 
-CohenEffectSize( live.totalwgt_lb[live.birthord==1], live.totalwgt_lb[live.birthord!=1])   # ANSWER = -0.088672927 
-'''(not significant! But would use a significance level to compare with p-value after running t-test between two groups)'''
+CohenEffectSize( live.totalwgt_lb[live.birthord==1], live.totalwgt_lb[live.birthord!=1])   # ANSWER = -0.088672927 (not significant! But would use )
 ```
 ### Histotgram that backs this up
 ```python
